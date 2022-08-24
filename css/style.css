@@ -40,7 +40,6 @@ body {
     line-height: 120%;
     font-weight: 400;
     margin: auto;
-    padding-top: 60px;
     color: #000000;
     width: 1140px;
 }
@@ -65,20 +64,27 @@ figure,
 fieldset {
     margin: 0;
 }
+ 
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+body :first-child{
+    padding-top: 30px;
+}
 
 section :last-child{
     margin: 0;
 }
 
 section {
+    display: block;
     margin-bottom: 50px;
 }
 
-.container {
-    width: 1080px;
-    margin: 0;
-    padding: 0;
-}
+
 
 h1 {
     font-weight: 900;
