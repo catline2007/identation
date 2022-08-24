@@ -175,3 +175,7 @@ section.grey {
 .last :last-child{
     margin: auto;
 }
+
+.last :only-child {
+    margin: 0;
+}
