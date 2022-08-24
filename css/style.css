@@ -75,8 +75,8 @@ section {
 
 .container {
     width: 1080px;
-    padding: 0 30px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -108,7 +108,7 @@ ul {
     margin-bottom: 30px;
 }
 
-ul li{
+ul, ol li{
     margin-bottom: 10px;
 }
 
