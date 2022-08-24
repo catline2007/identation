@@ -29,12 +29,12 @@
         <div class="container">
             <a id="chapter_1"></a>
             <h3>Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h3>
-            <img class="left" src="img/image 1.jpg" alt="">
+            <img src="img/image_1.jpg" alt="" >
             <p><strong>ВАЖНО:</strong> margin всегда задают от предыдущего элемента к следующему.</p>
             <p>Свойство <i>margin</i> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <i>margin-right</i> и <i>margin-bottom</i>.</p>
             <p>(!) Свойства <i>margin-left</i> и <i>margin-top</i> используются крайне редко.</p>
             <p>Для <i>padding</i> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
-            <img class="right" src="img/image 2.jpg" alt="">
+            <img class="right" src="img/image_2.jpg" alt="">
             <p class="clear">Отступ внутри блока сверху или слева реализуется через <i>padding-top</i> и <i>padding-left</i> родителя.</p>
             <p>Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
             <p>Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
@@ -46,18 +46,18 @@
             <a id="chapter_2"></a>
             <h3 class="clear-both">Отступ задается последнему возможному элементу в DOM-дереве</h3>
             <p>Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
-            <img src="img/image 3.jpg" alt="">
-            <img class="center" src="img/image 4.jpg" alt="">
+            <img src="img/image_3.jpg" alt="">
+            <img class="center" src="img/image_4.jpg" alt="">
             <p class="clear-both">Отступ делают за счёт соседних элементов, а не дочерних:</p>
-            <img class="center no-bottom-margin" src="img/image 5.jpg" alt="">
+            <img class="center no-bottom-margin" src="img/image_5.jpg" alt="">
             <div class="border">
                 <p><strong>ВАЖНО:</strong> здесь <i>.list-item</i> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
             </div>
             <p>Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
             <p>Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
-            <img class="center" src="img/image 6.jpg" alt="">
+            <img class="center" src="img/image_6.jpg" alt="">
             <p>В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. Именно для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
-            <img class="center" src="img/image 7.jpg" alt="">
+            <img class="center" src="img/image_7.jpg" alt="">
             <p>Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
         </div>
     </section>
@@ -68,17 +68,17 @@
             <h3>Для последнего элемента группы отступ всегда обнуляется</h3>
             <p>Для наглядности возьмём наш предыдущий пример с рецептами</p>
             <p>Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
-            <img class="center" src="img/image 8.jpg" alt="">
+            <img class="center" src="img/image_8.jpg" alt="">
             <p>В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section</i>. Я чаще всего задаю padding для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px.</i></p>
-            <img class="center" src="img/image 9.jpg" alt="">
-            <img class="center" src="img/image 10.jpg" alt="">
+            <img class="center" src="img/image_9.jpg" alt="">
+            <img class="center" src="img/image_10.jpg" alt="">
             <p>Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
-            <img class="center" src="img/image 12.jpg" alt="">
-            <img class="center" src="img/image 13.jpg" alt="">
+            <img class="center" src="img/image_12.jpg" alt="">
+            <img class="center" src="img/image_13.jpg" alt="">
             <p>Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
-            <img class="center" src="img/image 14.jpg" alt="">
+            <img class="center" src="img/image_14.jpg" alt="">
             <p>Советую использовать псевдоклассы :last-child чаще других, например так:</p>
-            <img class="center" src="img/image 15.jpg" alt="">
+            <img class="center" src="img/image_15.jpg" alt="">
         </div>
     </section>
 
