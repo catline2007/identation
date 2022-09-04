@@ -1,0 +1,9 @@
+:root {
+    --bg-color:  #FFFFFF;
+    --light-font-color: rgba(255, 255, 255, 0.86);
+    --dark-font-color: #383A4C;
+    --main-color: #15A9CB;
+    --footer-light-color: #555A7B;
+    --footer-dark-color: #2A2C3F; 
+    --form-agree-color: #4A76A8;
+}
